@@ -1,0 +1,21 @@
+@import '../../../styles/global.module.scss';
+
+.container {
+  background-color: $color-three;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.icon {
+  color: $color-two;
+  margin-left: 20px;
+}
+
+.companyName {
+  margin-left: 10px;
+  color: $color-one;
+  font-weight: 200;
+}

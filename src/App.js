@@ -1,8 +1,8 @@
+import MainPage from './commponents/view/MainPage/MainPage';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Print management</h1>
-    </div>
+    <MainPage />
   );
 }
 

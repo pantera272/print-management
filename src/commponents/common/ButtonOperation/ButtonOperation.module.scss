@@ -1,0 +1,54 @@
+@import '../../../styles/settings.module.scss';
+
+.container {
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  
+  .button {
+    height: 60px;
+    width: 150px;
+    border: 2px solid $color-four;
+    outline: 2px solid $color-four;
+    background-color: $color-four;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    color: $color-one;
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: 200ms;
+
+    span {
+      margin-top: 3px;
+      display: block;
+      font-size: 14px;
+    }
+  } 
+
+  .first {
+    border: 2px solid $color-four;
+    outline: 2px solid $color-four;
+    background-color: $button-color-one;
+
+    &:hover {
+      border: 2px solid $color-four;
+      outline: 2px solid $button-color-one;
+    }
+  }
+
+  .second {
+    border: 2px solid $color-four;
+    outline: 2px solid $color-four;
+    background-color: $button-color-two;
+
+    &:hover {
+      border: 2px solid $color-four;
+      outline: 2px solid $button-color-two;
+    }
+  }
+}

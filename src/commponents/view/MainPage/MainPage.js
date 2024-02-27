@@ -1,8 +1,12 @@
-import TopHeader from '../../common/TopHeader/TopHeader'
+import OperationButtonsContainer from '../../features/OperationsButtonContainer/OperationsButtonsContainer';
+import TopHeader from '../../common/TopHeader/TopHeader';
 
 const MainPage = () => {
   return (
-    <TopHeader />
+    <div>
+      <TopHeader />
+      <OperationButtonsContainer />
+    </div> 
   )
 }
 

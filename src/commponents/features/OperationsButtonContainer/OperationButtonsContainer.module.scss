@@ -1,0 +1,19 @@
+@import '../../../styles/settings.module.scss';
+
+.container {
+  height: 130px;
+  width: 100%;
+  background-color: $color-four;
+  padding: 15px 50px;
+  
+  .title {
+    color: $color-five;
+    font-weight: 100;
+    padding-bottom: 5px;
+  }
+
+  .buttonContainer{
+    display: flex;
+  }
+}
+

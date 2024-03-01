@@ -1,54 +1,86 @@
 @import '../../../styles/settings.module.scss';
 
 .container {
-  height: 60px;
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-  
+
   .button {
     height: 60px;
     width: 150px;
-    border: 2px solid $color-four;
-    outline: 2px solid $color-four;
-    background-color: $color-four;
-    cursor: pointer;
-    display: block;
-    text-align: left;
-    padding-left: 20px;
+    border-width: 2px;
+    border-style: solid;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: $color-four;
     color: $color-one;
-    letter-spacing: 1px;
-    font-size: 18px;
-    transition: 200ms;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
+    padding: 7px 0 7px 10px;
+    position: relative;
 
     span {
-      margin-top: 3px;
-      display: block;
+      height: 50%;
+      display: flex;
+      align-items: center;
+    }
+    
+    .icon {
+      font-size: 16px;
+    }
+
+    .text {
       font-size: 14px;
     }
-  } 
 
-  .first {
-    border: 2px solid $color-four;
-    outline: 2px solid $color-four;
+    .more {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      font-size: 26px;
+    }
+
+    .submenu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      top: 58px;
+      width: 146px;
+      left: 0;
+      visibility: hidden;
+
+      a {
+        color: $color-one;
+        padding: 5px 0;
+      }  
+    }
+  } 
+} 
+
+.containerFirst {
+  .button {
     background-color: $button-color-one;
 
-    &:hover {
-      border: 2px solid $color-four;
-      outline: 2px solid $button-color-one;
+    .submenu {
+      background-color: $button-color-one;
+      color: $color-one;
     }
-  }
-
-  .second {
-    border: 2px solid $color-four;
-    outline: 2px solid $color-four;
-    background-color: $button-color-two;
-
-    &:hover {
-      border: 2px solid $color-four;
-      outline: 2px solid $button-color-two;
+    
+    &:hover {    
+      outline-width: 2px;
+      outline-style: solid;
+      outline-color: $color-six;
+      
+      .submenu{
+        visibility: visible;
+        
+        a:hover {
+          background-color: $button-color-one-dark;
+        }
+      } 
     }
   }
 }
+
+

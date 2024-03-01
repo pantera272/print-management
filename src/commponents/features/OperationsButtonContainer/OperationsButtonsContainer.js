@@ -5,16 +5,35 @@ import { faGears, faWarehouse } from '@fortawesome/free-solid-svg-icons';
 
 const OperationButtonsContainer = () => {
 
-  //button  icon
-  const firstButton = <FontAwesomeIcon icon={faWarehouse} />
-  const secondButton = <FontAwesomeIcon icon={faGears} />
+  //expeanable menu data
+  const firstButton = {
+    name: 'Magazyn',
+    expeanable: true,
+    variant: 0,
+    icon: <FontAwesomeIcon icon={faWarehouse} />,
+    expeanableMenu: {
+      Papier: 'magazyn/papier',
+      Farba: 'magazyn/farby',
+      Inne: 'magazyn/inne'
+    }
+  }
+
+  const secoundButton = {
+    name: 'Produkcja',
+    expeanable: true,
+    variant: 1,
+    icon: <FontAwesomeIcon icon={faGears} />,
+    expeanableMenu: {
+      Druk_i_lakier: 'drukilakier',
+      Złocenie: 'złocenie',
+    }
+  }
 
   return (
     <div className={styles.container}>
       <div className={styles.title}>Operations</div>
       <div className={styles.buttonContainer} >
-        <ButtonOperation name='Magazyn' icon={firstButton} variant='0' />
-        <ButtonOperation name='Produkcja' icon={secondButton} variant='1' />
+        <ButtonOperation data={firstButton} />
       </div>
     </div>
   )

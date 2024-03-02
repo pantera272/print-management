@@ -11,22 +11,19 @@ const OperationButtonsContainer = () => {
     expeanable: true,
     variant: 0,
     icon: <FontAwesomeIcon icon={faWarehouse} />,
-    expeanableMenu: {
-      Papier: 'magazyn/papier',
-      Farba: 'magazyn/farby',
-      Inne: 'magazyn/inne'
-    }
+    expeanableMenu: [
+      {papier: 'magazynpapier'},
+      {farba: 'magazynfarby'},
+      {inne: 'magazyninne'}
+    ] 
   }
 
-  const secoundButton = {
-    name: 'Produkcja',
-    expeanable: true,
+  const secondButton = {
+    name: 'Zlecenia',
+    expeanable: false,
     variant: 1,
     icon: <FontAwesomeIcon icon={faGears} />,
-    expeanableMenu: {
-      Druk_i_lakier: 'drukilakier',
-      Złocenie: 'złocenie',
-    }
+    link: 'zlecenia'
   }
 
   return (
@@ -34,6 +31,7 @@ const OperationButtonsContainer = () => {
       <div className={styles.title}>Operations</div>
       <div className={styles.buttonContainer} >
         <ButtonOperation data={firstButton} />
+        <ButtonOperation data={secondButton} />
       </div>
     </div>
   )

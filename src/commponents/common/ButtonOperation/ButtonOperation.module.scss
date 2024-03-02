@@ -3,6 +3,7 @@
 .container {
 
   .button {
+    margin-right: 10px;
     height: 60px;
     width: 150px;
     border-width: 2px;
@@ -53,6 +54,9 @@
       a {
         color: $color-one;
         padding: 5px 0;
+        &::first-letter {
+          text-transform: uppercase;
+        }
       }  
     }
   } 
@@ -77,6 +81,31 @@
         
         a:hover {
           background-color: $button-color-one-dark;
+        }
+      } 
+    }
+  }
+}
+
+.containerSecond {
+  .button {
+    background-color: $button-color-two;
+
+    .submenu {
+      background-color: $button-color-two;
+      color: $color-one;
+    }
+    
+    &:hover {    
+      outline-width: 2px;
+      outline-style: solid;
+      outline-color: $button-color-two;
+      
+      .submenu{
+        visibility: visible;
+        
+        a:hover {
+          background-color: $button-color-two-dark;
         }
       } 
     }

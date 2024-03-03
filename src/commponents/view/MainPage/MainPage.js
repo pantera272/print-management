@@ -1,11 +1,9 @@
-import OperationButtonsContainer from '../../features/OperationsButtonContainer/OperationsButtonsContainer';
-import TopHeader from '../../common/TopHeader/TopHeader';
+import TopPanel from '../TopPanel/TopPanel';
 
 const MainPage = () => {
   return (
     <div>
-      <TopHeader />
-      <OperationButtonsContainer />
+      <TopPanel />
       main page
     </div> 
   )

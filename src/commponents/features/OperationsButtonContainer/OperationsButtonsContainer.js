@@ -23,7 +23,7 @@ const OperationButtonsContainer = () => {
     expeanable: false,
     variant: 1,
     icon: <FontAwesomeIcon icon={faGears} />,
-    link: 'zlecenia'
+    link: 'orders'
   }
 
   return (

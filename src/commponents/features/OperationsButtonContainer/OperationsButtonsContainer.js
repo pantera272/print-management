@@ -12,9 +12,9 @@ const OperationButtonsContainer = () => {
     variant: 0,
     icon: <FontAwesomeIcon icon={faWarehouse} />,
     expeanableMenu: [
-      {papier: 'magazynpapier'},
-      {farba: 'magazynfarby'},
-      {inne: 'magazyninne'}
+      {papier: 'storepaper'},
+      {farba: 'storepaint'},
+      {inne: 'storeelse'}
     ] 
   }
 

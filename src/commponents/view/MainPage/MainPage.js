@@ -6,6 +6,7 @@ const MainPage = () => {
     <div>
       <TopHeader />
       <OperationButtonsContainer />
+      main page
     </div> 
   )
 }

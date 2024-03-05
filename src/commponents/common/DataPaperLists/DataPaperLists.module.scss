@@ -1,0 +1,47 @@
+@import './../../../styles/settings.module.scss';
+
+.container {
+  width: 100%;
+
+  h1 {
+    width: 90%;
+    margin: 5px auto 0 auto;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-five;
+  }
+  
+  .tableContainer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid $color-four;
+
+    table {
+      width: 100%;
+      border: 1px solid $color-four;
+      border-collapse: collapse;
+
+      tr {
+        border: 1px solid $color-four;
+        
+        th, td {
+          padding-left: 10px;
+          text-align: left;
+          font-size: 16px;
+          font-weight: 100;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: $color-five;
+          border: 1px solid $color-four;
+        }
+
+        td {
+          color: black;
+        }
+      }     
+    }
+  }
+}

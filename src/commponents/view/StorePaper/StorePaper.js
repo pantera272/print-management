@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import TopPanel from '../TopPanel/TopPanel';
 import style from './StorePaper.module.scss';
+import DataPaperLists from '../../common/DataPaperLists/DataPaperLists';
 
 const StorePaper = () => {
 
@@ -10,7 +11,7 @@ const StorePaper = () => {
   return (
     <div className={style.container}>
       <TopPanel />
-      magazyn papier
+      <DataPaperLists data={paper} />
     </div>
   )
 }

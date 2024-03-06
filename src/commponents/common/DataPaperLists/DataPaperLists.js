@@ -2,8 +2,6 @@ import styles from './DataPaperLists.module.scss';
 
 const DataPaperLists = ({data}) => {
 
-  console.log(data);
-
   return(
     <div className={styles.container}>
       <h1>Papier</h1>

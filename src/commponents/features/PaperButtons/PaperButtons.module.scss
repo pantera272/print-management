@@ -1,0 +1,26 @@
+@import './../../../styles/settings.module.scss';
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .buttonFunction {
+    width: 90%;
+    border: 1px solid $color-four;
+    padding: 10px;
+    position: relative;
+
+    h2 {
+      font-weight: 100;
+      font-size: 16px;
+      color: $color-five;
+      position: absolute;
+      top: -15px;
+      background-color: $color-one;
+      padding: 0 5px;
+    }
+  }
+}

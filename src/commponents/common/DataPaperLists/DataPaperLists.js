@@ -20,14 +20,14 @@ const DataPaperLists = ({data}) => {
             </thead>
             <tbody>
               {data.map(value => 
-                  <tr key={value.id}>
-                    <td>{value.id}</td>
-                    <td>{value.name}</td>
-                    <td>{value.width}</td>
-                    <td>{value.height}</td>
-                    <td>{value.grammage}</td>
-                    <td>button</td>
-                  </tr>
+                <tr key={value.id}>
+                  <td>{value.id}</td>
+                  <td>{value.name}</td>
+                  <td>{value.width}</td>
+                  <td>{value.height}</td>
+                  <td>{value.grammage}</td>
+                  <td>button</td>
+                </tr>
               )}
             </tbody>
           </table>

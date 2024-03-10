@@ -1,9 +1,10 @@
-import styles from './AddPaper.module.cscc';
+import AddPaperForm from '../../common/AddPaperForm/AddPaperForm';
+import styles from './AddPaper.module.scss';
 
 const AddPaper = () => {
   return (
     <div className={styles.container}>
-      add paper
+      <AddPaperForm />
     </div>
   )
 } 

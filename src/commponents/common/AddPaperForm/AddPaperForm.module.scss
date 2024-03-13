@@ -23,15 +23,44 @@
     flex-direction: row;
     margin-bottom: 20px;
     
+    input {
+      border: 1px solid $color-five;
+
+      &:focus {
+        background-color: $color-four;
+        outline: none;
+      }
+    }
+    
     label {
       font-size: 16px;
       font-weight: 100;
       color: $color-five;
       width: 150px;
     }
+
+    p {
+      font-size: 16px;
+      font-weight: 100;
+      margin-left: 30px;
+      color: $color-eight;
+    }
   }
 
   .action {
     text-align: center;
   }
+}
+
+.error {
+  border: 1px solid $color-eight;
+  background-color: $color-nine;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
 }
